@@ -22,7 +22,7 @@ function renderProducts() {
 }  
 function addToCart(productId, callback) {
     const product = products.find(p => p.id === productId);
-    setTimeout(() => callback(product), 300); // simulate async
+    setTimeout(() => callback(product), 300); 
 } 
 function handleAddToCart(id) {
     addToCart(id, product => {
